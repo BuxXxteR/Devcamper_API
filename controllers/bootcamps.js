@@ -10,7 +10,7 @@ exports.getBootcamps = async (req, res, next) => {
     res
       .status(200)
       .json({ success: true, count: bootcamps.length, data: bootcamps });
-  } catch (error) {
+  } catch (err) {
     next(err);
   }
 };
@@ -24,10 +24,7 @@ exports.getBootcamp = async (req, res, next) => {
 
     if (!bootcamp) {
       return next(
-        new ErrorResponse(
-          `Bootcamp not found withsssss id of ${req.params.id}`,
-          404
-        )
+        new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404)
       );
     }
     res.status(200).json({ success: true, data: bootcamp });
