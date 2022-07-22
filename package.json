@@ -1,24 +1,20 @@
 {
-  "name": "devcamper_api",
+  "name": "devcamperapi",
   "version": "1.0.0",
-  "description": "Devcamper backend API",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "SET NODE_ENV=production & node server",
+    "start": "NODE_ENV=production node server",
     "dev": "nodemon server"
   },
-  "author": "Nipuna Amaranayaka",
-  "license": "MIT",
+  "author": "Nipuna",
+  "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "mongoose": "^6.2.1",
-    "morgan": "^1.10.0",
-    "node-geocoder": "^4.0.0",
-    "slugify": "^1.6.5"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.19"
   }
 }
